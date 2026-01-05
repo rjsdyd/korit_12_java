@@ -22,26 +22,30 @@ package ch11_arrays;
     7번 학생의 점수를 입력하세요 >>> 3.8
     8번 학생의 점수를 입력하세요 >>> 3.7
     학생들의 점수 총합은 32.9입니다.
- */
+*/
 import java.util.Scanner;
 
 public class Array02 {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("몇명의 학생을 등록하시겠습니까? >>> ");
-        int humans = scanner.nextInt();
-        String[] names = new String[humans];
-        double[] scores = new double[humans];
-        for (int i = 0; i < humans; i++) {
-            System.out.print((i + 1) + "번 학생의 이름을 등록하세요 >>> ");
-            names[i] = scanner.next();
-        }
-        double sum = 0;
-        for (int i = 0; i < humans; i++) {
-            System.out.print((i + 1) + "번 학생의 점수를 입력하세요 >>> ");
-            scores[i] = scanner.nextDouble();
-            sum += scores[i];
-        }
-        System.out.println("학생들의 점수 총합은 " + sum + "입니다.");
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.print("몇명의 학생을 등록하시겠습니까? >>> ");
+//        int humans = scanner.nextInt();
+//        String[] names = new String[humans];
+//        double[] scores = new double[humans];
+//        for (int i = 0; i < humans; i++) {
+//            System.out.print((i + 1) + "번 학생의 이름을 등록하세요 >>> ");
+//            names[i] = scanner.next();
+//        }
+//        double sum = 0;
+//        for (int i = 0; i < humans; i++) {
+//            System.out.print((i + 1) + "번 학생의 점수를 입력하세요 >>> ");
+//            scores[i] = scanner.nextDouble();
+//            sum += scores[i];
+//        }
+//        System.out.println("학생들의 점수 총합은 " + sum + "입니다.");
+//    }
+//}
+        Array03Method array03Method = new Array03Method();
+        array03Method.writeNameAndScore();
     }
 }
