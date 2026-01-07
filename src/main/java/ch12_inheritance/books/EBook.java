@@ -33,6 +33,5 @@ public class EBook extends Book{
         System.out.println("저자 : " + getAuthor());
         System.out.println("크기 : " + getFileSize() + "MB");
         System.out.println("형식 : " + getFormat());
-
     }
 }

@@ -1,0 +1,13 @@
+package ch13_abstraction.abstract_classes;
+
+public class PhoneFactory extends Factory{
+    @Override
+    public void produce(String model) {
+        System.out.println("모바일 폰 공장 : " + this.getName() + "에서 [ " + model +" ]을(를) 생산합니다.");
+    }
+
+    @Override
+    public void manage() {
+        System.out.println("모바일 폰 공장을 관리합니다.");
+    }
+}
