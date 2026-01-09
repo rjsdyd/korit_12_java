@@ -164,7 +164,7 @@ public class CentralControl {
     public void delectDevice(Power device) {
         for (int i = 0; i < deviceArray.length; i++) {
             if (deviceArray[i] == device) { // 배열 i번째 칸에 있는 장치가 삭제하려고 전달한 그 장치와 완전히 같은 객체라면
-                deviceArray[i] = null; // 그 장치가 맞다면 삭제해라
+                deviceArray[i] = null;      // 그 장치가 맞다면 삭제해라
                 System.out.println(device.getClass().getSimpleName() + " 장치가 삭제되었습니다.");
                 return;
             }
@@ -197,10 +197,6 @@ public class CentralControl {
         }
     }
 }
-
-
-
-
 /*
     Printer 클래스와 Speaker 클래스를 생성하고 Power를 implement 하시오.
     Printer의 고유 메서드 print() - 프린터가 인쇄를 합니다.
