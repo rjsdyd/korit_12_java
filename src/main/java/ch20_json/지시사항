@@ -1,0 +1,66 @@
+## JSON 관련 과제 가이드 라인
+1. 과제 목표
+Java 객체와 JSON 문자열 간의 상호 변환 원리 이해
+
+List와 Map 등 복합 자료구조의 JSON 처리 숙달
+
+GsonBuilder 설정을 통한 출력 포맷 제어
+
+2. 단계별 미션 (Mission)
+미션 1: 도메인 클래스 설계
+Book 클래스를 생성하세요.
+
+필드: bookId(Long), title(String), author(String), categories(List<String>)
+
+Lombok의 @Data, @AllArgsConstructor를 활용하세요.
+
+미션 2: 객체 → JSON 변환 (Serialization)
+Book 객체를 하나 생성하고, GsonBuilder를 사용하여 **들여쓰기(Pretty Printing)**가 적용된 JSON 문자열로 변환하세요.
+
+결과를 콘솔에 출력하세요.
+
+미션 3: JSON → Map 변환 (Deserialization)
+미션 2에서 만든 JSON 문자열을 Map<String, Object> 형태로 다시 변환하세요.
+
+변환된 Map에서 title 값만 꺼내어 출력하세요.
+
+미션 4: 리스트 데이터 처리
+Book 객체 2개를 담은 List<Book>을 만드세요.
+
+해당 리스트 전체를 JSON 배열로 변환하여 출력하세요.
+
+### 실행 예
+
+[미션 2: 객체 -> JSON 변환 결과]
+{
+  "bookId": 101,
+  "title": "자바 마스터",
+  "author": "안선생",
+  "categories": [
+    "프로그래밍",
+    "컴퓨터공학"
+  ]
+}
+
+[미션 3: Map 변환 후 제목 추출]
+도서 제목: 자바 마스터
+
+[미션 4: 리스트 -> JSON 배열 변환]
+[
+  {
+    "bookId": 101,
+    "title": "자바 마스터",
+    "author": "안선생",
+    "categories": [
+      "프로그래밍",
+      "컴퓨터공학"
+    ]
+  },
+  {
+    "bookId": 102,
+    "title": "파이썬 입문",
+    "author": "김철수",
+    "categories": [
+      "데이터분석"
+    ]
+  }
