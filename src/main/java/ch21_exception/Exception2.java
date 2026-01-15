@@ -2,7 +2,7 @@ package ch21_exception;
 
 class LoginFinledException extends Exception {
     public LoginFinledException(String message) {
-        super(message);     // 이건 그냥 message를 argument로 한 LoginFainledException의 슈퍼 클래스 생성자를 호출한다는 뜻
+        super(message);     // 이건 그냥 message를 argument로 한 LoginFinledException의 슈퍼 클래스 생성자를 호출한다는 뜻
         System.out.println("로그인 시 예외가 발생");
     }
 }
